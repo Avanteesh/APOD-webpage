@@ -1,5 +1,5 @@
 // apod generator
-const APIKey = `tK6vZrVvhvEMBvOTUDhwPWVuLkKkUCA209oZ0Aun`;
+const APIKey = `enter-your-api-key`;
 // html vars
 const dateText = document.querySelector(".date-text");
 const imageTitle = document.querySelector(".image-title");
