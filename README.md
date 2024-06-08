@@ -1,8 +1,6 @@
 # hello there Pragmatic programmer, this is avanteesh
 # this is avanteesh
 # this folder includes my web project on APOD 
-# for querries contact: instagram: @AVT_astro206
-# or email: eeshan.avanteesh@gmail.com
 
 
 
