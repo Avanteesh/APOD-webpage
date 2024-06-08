@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width" initial-scale="1.0">
+    <title>Astronomical Picture of the day</title>
+    <link rel="stylesheet" href="apod.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <main class="container">
+        <div class="heading">
+            <header>The Astronomical Picture of the Day (<span class="date-text">yyy-mm-dd</span>)</header>
+        </div><br>
+        <div class="media-container">
+            <div class="title-of-media">
+                <h3 class="image-title"></h3>
+            </div>
+            <div class="image-container">
+                <img class="image-object" height="400" width="630" style="user-select: none;">
+                <p class="copyright-label">&copy; NASA</p>
+            </div>
+            <div class="text-content">
+                <p class="text-contents"></p>
+                <a class="apod-link" 
+                style="color: rgb(62, 62, 255);
+                        font-weight: bold;
+                         text-align: center;">click here</a>
+            </div>
+        </div>
+        <dialog class="image-close-up-dialog">
+            <div>
+                <i class="bi bi-x" id="close-image-dialog"></i>
+            </div>
+            <img class="apod-image" height="94%" width="99%" style="border:none;user-select: none">
+        </dialog>
+    </main>
+
+    <script src="apod.js"></script>
+</body>
+</html>

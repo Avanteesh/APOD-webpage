@@ -1,0 +1,131 @@
+*,*::before, *::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: monospace;
+    color: #f5f4f4;
+}
+@font-face {
+    font-family: time-clock;
+    src: url(timeclock.ttf) format(truetype);
+}
+:root {
+    ---background-color: #15161aee;
+    --image-dialog-width: 76vh;
+    --title-font-size: 1.85rem;
+    --dialog-border-color: rgb(5, 92, 143);
+}
+body {
+    display: grid;
+    place-items: center;
+    background: var(---background-color);
+    min-width: 60vh;
+    overflow: none;
+}
+.container {
+    display: grid;
+    place-items: center;
+    margin-top: 1vh;
+    padding: 8px;
+}
+.container .heading {
+    font-size: 2.0rem;
+    font-weight: bolder;
+    padding: 14px;
+}
+.heading header::after {
+    content:"";
+    display: inline-block;
+    position: relative;
+    top: -12px;
+    left: 10px;
+    background: #6265faf3;
+    height: 4px;
+    width:97%;
+    border-radius: 30px;
+}
+.heading header span {
+    font-family: time-clock;
+} 
+.container .media-container {
+    display: grid;
+    place-items: center;
+    padding: 12px;
+}
+.media-container .title-of-media {
+    padding: 15px;
+    margin: 5px;
+}
+.media-container .title-of-media h3 {
+    font-size: var(--title-font-size);
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 150);
+}
+.title-of-media h3::before  {
+    content: "\0022";
+    position: relative;
+    top: 0px;
+    left: -2px;
+    display:inline-block;
+    font-size: calc(var(--title-font-size) + 0.3rem);
+    color: orange;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+.title-of-media h3::after  {
+    content: "\0022";
+    position: relative;
+    top: 0px;
+    left: -2px;
+    display:inline-block;
+    font-size: calc(var(--title-font-size) + 0.3rem);
+    color: orange;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+.media-container .image-container {
+    padding: 12px;
+}
+.image-container p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.media-container .text-content {
+    padding: 10px;
+    margin: 5px;
+    width: 99%;
+}
+.text-content p {
+    font-size: 1.19rem;
+    width: 70vh;
+}
+.image-close-up-dialog {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 43%;
+    left: 50%;
+    width: calc(var(--image-dialog-width) * 1.2);
+    height: calc(var(--image-dialog-width));
+    border-radius: 15px;
+    background: #1d1d1d;
+    border: 4px solid var(--dialog-border-color);
+    box-shadow: 0px 0px 15px 1px var(--dialog-border-color);
+    padding: 20px;
+    overflow: scroll;
+    transition: 0.9s;
+}
+.image-close-up-dialog div {
+    display: flex;
+    justify-content: flex-end;
+    padding: 4px;
+}
+.image-close-up-dialog div i {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.image-close-up-dialog div i:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 8px #fff;
+}
